@@ -23,8 +23,8 @@
                         <li class="li-inline"><a class="menu-item " href="#0">Контакты</a></li>
                     </ul>
                 </nav>
-                <button id="menu-button" class="menu-button">
-                    <span class="visually-hidden" for="menu-button">Меню</span>
+                <button class="menu-button">
+                    <span class="visually-hidden">Меню</span>
                 </button>
             </div>
             <h1 class="title">Блог о творчестве, спорте, и образе жизни
@@ -216,15 +216,13 @@
                         </article>
                     </div>
                 </section>
-                <section>
-                    <form name="search-form" class="search">
-                        <input id="search-input" class="search-input" type="search" placeholder="Найти...">
-                        <label class="visually-hidden" for="search-input">Ввод информации для поиска</label>
-                        <button id="search-button" class="search-button">
-                            <span class="visually-hidden" for="search-button">Поиск</span>
-                        </button>
-                    </form>
-                </section>
+                <form name="search-form" class="search">
+                    <input id="search-input" class="search-input" type="search" placeholder="Найти...">
+                    <label class="visually-hidden" for="search-input">Ввод информации для поиска</label>
+                    <button class="search-button">
+                        <span class="visually-hidden">Поиск</span>
+                    </button>
+                </form>
                 <section>
                     <form name="subscribe-form" class="subscribe">
                         <h2 class="sidebar-title">Рассылка</h2>
@@ -313,7 +311,7 @@
                         </p>
                         <div class="product-price-button">
                             <div class="price">
-                                <p class="new-price">3500 р</p>
+                                <p class="new-price one-price">3500 р</p>
                             </div>
                             <button class="subscribe-button product-button">В Магазин</button>
                         </div>
@@ -343,7 +341,7 @@
         </section>
     </div>
     <footer class="container footer">
-        <adress class="social">
+        <address class="social">
             <ul class="list">
                 <li class="li-inline">
                     <a class="social-dribbble" href="#0">
@@ -361,44 +359,42 @@
                     </a>
                 </li>
             </ul>
-        </adress>
+        </address>
         <a class="copyright" href="#0"> Copyright © 2009–2019 City Blog LLC.
         </a>
     </footer>
     <form class="popup-win hidden">
         <div class="popup">
-            <button id="close-button" class="popup-close">
-                <span class="visually-hidden" for="close-button">Закрыть попап</span>
+            <button class="popup-close">
+                <span class="visually-hidden">Закрыть попап</span>
             </button>
             <h2 class="trends-title popup-title"> ваш фидбек</h2>
-            <fieldset class="popup-field">
-                <p class="popup-text">Как часто вы заходите на сайт?
-                </p>
-                <select class="popup-select">
-                    <option>Почти каждый день
-                    </option>
-                    <option>Раз в несколько дней</option>
-                    <option>Раз в несколько недель</option>
-                    <option>Несколько раз в год</option>
-                </select>
-                <p class="popup-text">Вы подписаны на email рассылку?
-                </p>
-                <div class="popup-radio-buttons">
-                    <label class="popup-radio-group">
-                        <input class="popup-radio" name="popup-radio-group" type="radio" value="yes">
-                        <span class="popup-radio-text"> Да</span>
-                    </label>
-                    <label class="popup-radio-group">
-                        <input class="popup-radio" name="popup-radio-group" type="radio" value="no">
-                        <span class="popup-radio-text">Нет</span>
-                    </label>
-                </div>
-                <p class="popup-text">Расскажите, какой контент вы хотели бы видеть
-                    на нашем сайте?
-                </p>
-                <textarea class="popup-textarea"> Может, больше рецептов? </textarea>
-                <input type="submit" value="Отправить" class="subscribe-button">
+            <label class="popup-text">Как часто вы заходите на сайт?
+            </label>
+            <select class="popup-select">
+                <option>Почти каждый день
+                </option>
+                <option>Раз в несколько дней</option>
+                <option>Раз в несколько недель</option>
+                <option>Несколько раз в год</option>
+            </select>
+            <label class="popup-text popup-text-radio">Вы подписаны на email рассылку?
+            </label>
+            <fieldset class="popup-radio-buttons">
+                <label class="popup-radio-group">
+                    <input class="popup-radio" name="popup-radio-group" type="radio" value="yes">
+                    <span class="popup-radio-text"> Да</span>
+                </label>
+                <label class="popup-radio-group">
+                    <input class="popup-radio" name="popup-radio-group" type="radio" value="no">
+                    <span class="popup-radio-text">Нет</span>
+                </label>
             </fieldset>
+            <label class="popup-text popup-text-radio">Расскажите, какой контент вы хотели бы видеть
+                на нашем сайте?
+            </label>
+            <textarea class="popup-textarea"> Может, больше рецептов? </textarea>
+            <button class="subscribe-button popup-button"> отправить </button>
         </div>
     </form>
 </body>
