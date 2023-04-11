@@ -369,18 +369,20 @@
                 <span class="visually-hidden">Закрыть попап</span>
             </button>
             <h2 class="trends-title popup-title"> ваш фидбек</h2>
-            <label class="popup-text">Как часто вы заходите на сайт?
-            </label>
-            <select class="popup-select">
-                <option>Почти каждый день
-                </option>
-                <option>Раз в несколько дней</option>
-                <option>Раз в несколько недель</option>
-                <option>Несколько раз в год</option>
-            </select>
-            <label class="popup-text popup-text-radio">Вы подписаны на email рассылку?
-            </label>
+            <fieldset class="popup-fieldset">
+                <legend class="popup-text">Как часто вы заходите на сайт?
+                </legend>
+                <select class="popup-select">
+                    <option>Почти каждый день
+                    </option>
+                    <option>Раз в несколько дней</option>
+                    <option>Раз в несколько недель</option>
+                    <option>Несколько раз в год</option>
+                </select>
+            </fieldset>
             <fieldset class="popup-radio-buttons">
+                <legend class="popup-text">Вы подписаны на email рассылку?
+                </legend>
                 <label class="popup-radio-group">
                     <input class="popup-radio" name="popup-radio-group" type="radio" value="yes">
                     <span class="popup-radio-text"> Да</span>
@@ -390,10 +392,12 @@
                     <span class="popup-radio-text">Нет</span>
                 </label>
             </fieldset>
-            <label class="popup-text popup-text-radio">Расскажите, какой контент вы хотели бы видеть
-                на нашем сайте?
-            </label>
-            <textarea class="popup-textarea"> Может, больше рецептов? </textarea>
+            <fieldset class="popup-fieldset">
+                <legend class="popup-text">Расскажите, какой контент вы хотели бы видеть
+                    на нашем сайте?
+                </legend>
+                <textarea class="popup-textarea"> Может, больше рецептов? </textarea>
+            </fieldset>
             <button class="subscribe-button popup-button"> отправить </button>
         </div>
     </form>
